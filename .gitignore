@@ -1,0 +1,10 @@
+# Ignore IntelliJ project files for parent workspace
+.idea/
+*.iml
+
+# Ignore Maven build folder for parent (if any)
+target/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
