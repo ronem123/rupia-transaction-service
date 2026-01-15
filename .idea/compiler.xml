@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for rupia" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.6.3/mapstruct-processor-1.6.3.jar" />
+        </processorPath>
+        <module name="rupia" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rupia-consumer" />
+        <module name="rupia-discovery-server" />
+        <module name="rupia-auth-service" />
+        <module name="rupia-wallet-service" />
+        <module name="rupia-customer" />
+      </profile>
+      <profile name="Annotation profile for rupia-transaction-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="rupia-gateway" />
+        <module name="rupia-transaction-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth-service" target="21" />
+      <module name="rupia-all-transaction-service" target="21" />
+      <module name="transaction-service" target="21" />
+      <module name="transasction-service" target="21" />
+      <module name="wallet-service" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-service" options="-parameters" />
+      <module name="rupia" options="-parameters" />
+      <module name="rupia-all-transaction-service" options="-parameters" />
+      <module name="rupia-auth-service" options="-parameters" />
+      <module name="rupia-consumer" options="-parameters" />
+      <module name="rupia-customer" options="-parameters" />
+      <module name="rupia-discovery-server" options="-parameters" />
+      <module name="rupia-gateway" options="-parameters" />
+      <module name="rupia-transaction-service" options="-parameters" />
+      <module name="rupia-wallet-service" options="-parameters" />
+      <module name="transaction-service" options="-parameters" />
+      <module name="transasction-service" options="-parameters" />
+      <module name="wallet-service" options="-parameters" />
+    </option>
+  </component>
+</project>
