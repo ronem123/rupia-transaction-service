@@ -3,8 +3,6 @@ spring:
     name: rupia-transaction-service
 server:
   port: 8095
-  servlet:
-    context-path: /api
 eureka:
   client:
     service-url:
